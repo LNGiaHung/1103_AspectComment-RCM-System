@@ -1,0 +1,956 @@
+[
+  {
+    "sentence": "I hope it works, because if it breaks you're in trouble.",
+    "aspects": [
+      [
+        "reliability",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Mua sản phẩm này thì tốt nhất bạn nên cầu trời khấn Phật cho khỏi gặp phải vấn đề nghiêm trọng.",
+    "aspects": []
+  },
+  {
+    "sentence": "Error parsing keypoint synthesis response",
+    "aspects": [
+      [
+        "performance",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Chuyển từ PC để bàn sang laptop, tôi đã rất ngạc nhiên về hiệu năng mạnh mẽ của nó.  Hoàn toàn đáp ứng được kỳ vọng.",
+    "aspects": [
+      [
+        "performance",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error parsing keypoint synthesis response",
+    "aspects": [
+      [
+        "glass screen",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "The glass screen was a definite plus.",
+    "aspects": [
+      [
+        "glass screen",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "It's a bit too heavy and bulky for my liking.",
+    "aspects": [
+      [
+        "weight",
+        "negative"
+      ],
+      [
+        "size",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Nó khá nặng và cồng kềnh.  Điều đó là điểm trừ duy nhất.",
+    "aspects": [
+      [
+        "size",
+        "negative"
+      ],
+      [
+        "weight",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "This product feels incredibly flimsy and poorly constructed.",
+    "aspects": [
+      [
+        "construction",
+        "negative"
+      ],
+      [
+        "quality",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Sản phẩm này được chế tạo qua loa, thiếu sự tinh tế và chất lượng.  Tôi rất thất vọng với giá tiền bỏ ra.",
+    "aspects": []
+  },
+  {
+    "sentence": "Error parsing keypoint synthesis response",
+    "aspects": [
+      [
+        "Office",
+        "positive"
+      ],
+      [
+        "features",
+        "neutral"
+      ],
+      [
+        "functioning",
+        "neutral"
+      ],
+      [
+        "programs",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "sentence": "Khả năng tương thích với Office thì có, nhưng các tính năng và cách hoạt động hoàn toàn khác biệt, khiến bạn phải mất công làm quen lại từ đầu.  Thay vì vậy, tốt hơn hết là nên tiết kiệm tiền và tập trung sử dụng các chương trình đã được cài đặt sẵn trên máy Mac.",
+    "aspects": [
+      [
+        "Office",
+        "neutral"
+      ],
+      [
+        "features",
+        "negative"
+      ],
+      [
+        "functioning",
+        "negative"
+      ],
+      [
+        "programs",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "I've purchased a second MacBook and I'm quite happy with it.",
+    "aspects": []
+  },
+  {
+    "sentence": "Tôi đã sở hữu hai chiếc MacBook rồi, và chiếc này cũng không làm tôi thất vọng.",
+    "aspects": []
+  },
+  {
+    "sentence": "Error parsing keypoint synthesis response",
+    "aspects": [
+      [
+        "battery life",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Thời lượng pin được quảng cáo là 7 giờ là hoàn toàn không chính xác, thậm chí còn là một lời nói dối trắng trợn.  Tôi rất thất vọng về điều này.",
+    "aspects": [
+      [
+        "battery life",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error parsing keypoint synthesis response",
+    "aspects": [
+      [
+        "charge",
+        "negative"
+      ],
+      [
+        "charging",
+        "negative"
+      ],
+      [
+        "charge",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "charge",
+        "negative"
+      ],
+      [
+        "charging",
+        "negative"
+      ],
+      [
+        "charge",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "processor",
+        "positive"
+      ],
+      [
+        "graphics card",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "processor",
+        "positive"
+      ],
+      [
+        "graphics card",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "GUI",
+        "negative"
+      ],
+      [
+        "screen",
+        "negative"
+      ],
+      [
+        "power light",
+        "neutral"
+      ],
+      [
+        "hard drive light",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "GUI",
+        "negative"
+      ],
+      [
+        "screen",
+        "negative"
+      ],
+      [
+        "power light",
+        "neutral"
+      ],
+      [
+        "hard drive light",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "Support",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "Support",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "High definition quality",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "High definition quality",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "KEYS",
+        "negative"
+      ],
+      [
+        "KEYBOARD",
+        "negative"
+      ],
+      [
+        "KEYS",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "KEYS",
+        "negative"
+      ],
+      [
+        "KEYBOARD",
+        "negative"
+      ],
+      [
+        "KEYS",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "web browsing",
+        "positive"
+      ],
+      [
+        "uploading photos",
+        "positive"
+      ],
+      [
+        "watching movies",
+        "positive"
+      ],
+      [
+        "creating presentations",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "web browsing",
+        "positive"
+      ],
+      [
+        "uploading photos",
+        "positive"
+      ],
+      [
+        "watching movies",
+        "positive"
+      ],
+      [
+        "creating presentations",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "Resolution",
+        "negative"
+      ],
+      [
+        "appearance",
+        "negative"
+      ],
+      [
+        "cooling system",
+        "negative"
+      ],
+      [
+        "graphics card",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "Resolution",
+        "negative"
+      ],
+      [
+        "appearance",
+        "negative"
+      ],
+      [
+        "cooling system",
+        "negative"
+      ],
+      [
+        "graphics card",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "works",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "works",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "Windows",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "Windows",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "Powerpoint program",
+        "neutral"
+      ],
+      [
+        "Keynote",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "Powerpoint program",
+        "neutral"
+      ],
+      [
+        "Keynote",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "3 year warranty",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "3 year warranty",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "syncing",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "syncing",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "imovie program",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "imovie program",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "program",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "program",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "runs",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "runs",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "Games",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "Games",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "Windows Vista",
+        "negative"
+      ],
+      [
+        "online service",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "Windows Vista",
+        "negative"
+      ],
+      [
+        "online service",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "system",
+        "positive"
+      ],
+      [
+        "Windows applications",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "system",
+        "positive"
+      ],
+      [
+        "Windows applications",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "quality",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "quality",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "battery",
+        "positive"
+      ],
+      [
+        "built",
+        "positive"
+      ],
+      [
+        "runs",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "battery",
+        "positive"
+      ],
+      [
+        "built",
+        "positive"
+      ],
+      [
+        "runs",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "use",
+        "positive"
+      ],
+      [
+        "security",
+        "positive"
+      ],
+      [
+        "pricetag",
+        "conflict"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "use",
+        "positive"
+      ],
+      [
+        "security",
+        "positive"
+      ],
+      [
+        "pricetag",
+        "conflict"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "booting up",
+        "positive"
+      ],
+      [
+        "shutting down",
+        "positive"
+      ],
+      [
+        "connection with the internet",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "booting up",
+        "positive"
+      ],
+      [
+        "shutting down",
+        "positive"
+      ],
+      [
+        "connection with the internet",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "quality",
+        "negative"
+      ],
+      [
+        "performance",
+        "negative"
+      ],
+      [
+        "battery life",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "quality",
+        "negative"
+      ],
+      [
+        "performance",
+        "negative"
+      ],
+      [
+        "battery life",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": []
+  },
+  {
+    "sentence": "Error in keypoint stream synthesis",
+    "aspects": [
+      [
+        "battery life",
+        "positive"
+      ],
+      [
+        "processing speed",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "sentence": "Error in instance stream synthesis",
+    "aspects": [
+      [
+        "battery life",
+        "positive"
+      ],
+      [
+        "processing speed",
+        "negative"
+      ]
+    ]
+  }
+]
