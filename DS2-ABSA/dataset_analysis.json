@@ -1,0 +1,242 @@
+{
+  "lap": {
+    "2_shot": {
+      "statistics": {
+        "train": {
+          "num_examples": 2436,
+          "num_aspects": 1922,
+          "avg_aspects": 0.7889983579638752
+        },
+        "test": {
+          "num_examples": 800,
+          "num_aspects": 654,
+          "avg_aspects": 0.8175
+        },
+        "few_shot": {
+          "num_examples": 50,
+          "num_aspects": 60,
+          "avg_aspects": 1.2
+        }
+      },
+      "polarity_distribution": {
+        "train": {
+          "positive": 808,
+          "negative": 691,
+          "neutral": 387,
+          "conflict": 36
+        },
+        "test": {
+          "positive": 341,
+          "negative": 128,
+          "neutral": 169,
+          "conflict": 16
+        },
+        "few_shot": {
+          "positive": 26,
+          "negative": 24,
+          "neutral": 9,
+          "conflict": 1
+        }
+      }
+    },
+    "5_shot": {
+      "statistics": {
+        "train": {
+          "num_examples": 2436,
+          "num_aspects": 1922,
+          "avg_aspects": 0.7889983579638752
+        },
+        "test": {
+          "num_examples": 800,
+          "num_aspects": 654,
+          "avg_aspects": 0.8175
+        },
+        "few_shot": {
+          "num_examples": 122,
+          "num_aspects": 102,
+          "avg_aspects": 0.8360655737704918
+        }
+      },
+      "polarity_distribution": {
+        "train": {
+          "positive": 808,
+          "negative": 691,
+          "neutral": 387,
+          "conflict": 36
+        },
+        "test": {
+          "positive": 341,
+          "negative": 128,
+          "neutral": 169,
+          "conflict": 16
+        },
+        "few_shot": {
+          "positive": 38,
+          "negative": 41,
+          "neutral": 21,
+          "conflict": 2
+        }
+      }
+    }
+  },
+  "res": {
+    "2_shot": {
+      "statistics": {
+        "train": {
+          "num_examples": 2432,
+          "num_aspects": 2972,
+          "avg_aspects": 1.2220394736842106
+        },
+        "test": {
+          "num_examples": 800,
+          "num_aspects": 1134,
+          "avg_aspects": 1.4175
+        },
+        "few_shot": {
+          "num_examples": 49,
+          "num_aspects": 66,
+          "avg_aspects": 1.346938775510204
+        }
+      },
+      "polarity_distribution": {
+        "train": {
+          "positive": 1774,
+          "negative": 621,
+          "neutral": 509,
+          "conflict": 68
+        },
+        "test": {
+          "positive": 728,
+          "negative": 196,
+          "neutral": 196,
+          "conflict": 14
+        },
+        "few_shot": {
+          "positive": 44,
+          "negative": 8,
+          "neutral": 14,
+          "conflict": 0
+        }
+      }
+    },
+    "5_shot": {
+      "statistics": {
+        "train": {
+          "num_examples": 2432,
+          "num_aspects": 2972,
+          "avg_aspects": 1.2220394736842106
+        },
+        "test": {
+          "num_examples": 800,
+          "num_aspects": 1134,
+          "avg_aspects": 1.4175
+        },
+        "few_shot": {
+          "num_examples": 122,
+          "num_aspects": 143,
+          "avg_aspects": 1.1721311475409837
+        }
+      },
+      "polarity_distribution": {
+        "train": {
+          "positive": 1774,
+          "negative": 621,
+          "neutral": 509,
+          "conflict": 68
+        },
+        "test": {
+          "positive": 728,
+          "negative": 196,
+          "neutral": 196,
+          "conflict": 14
+        },
+        "few_shot": {
+          "positive": 79,
+          "negative": 38,
+          "neutral": 23,
+          "conflict": 3
+        }
+      }
+    }
+  },
+  "res15": {
+    "2_shot": {
+      "statistics": {
+        "train": {
+          "num_examples": 1052,
+          "num_aspects": 956,
+          "avg_aspects": 0.908745247148289
+        },
+        "test": {
+          "num_examples": 685,
+          "num_aspects": 542,
+          "avg_aspects": 0.7912408759124088
+        },
+        "few_shot": {
+          "num_examples": 21,
+          "num_aspects": 17,
+          "avg_aspects": 0.8095238095238095
+        }
+      },
+      "polarity_distribution": {
+        "train": {
+          "positive": 721,
+          "negative": 199,
+          "neutral": 29,
+          "conflict": 7
+        },
+        "test": {
+          "positive": 319,
+          "negative": 179,
+          "neutral": 27,
+          "conflict": 17
+        },
+        "few_shot": {
+          "positive": 10,
+          "negative": 6,
+          "neutral": 1,
+          "conflict": 0
+        }
+      }
+    },
+    "5_shot": {
+      "statistics": {
+        "train": {
+          "num_examples": 1052,
+          "num_aspects": 956,
+          "avg_aspects": 0.908745247148289
+        },
+        "test": {
+          "num_examples": 685,
+          "num_aspects": 542,
+          "avg_aspects": 0.7912408759124088
+        },
+        "few_shot": {
+          "num_examples": 53,
+          "num_aspects": 48,
+          "avg_aspects": 0.9056603773584906
+        }
+      },
+      "polarity_distribution": {
+        "train": {
+          "positive": 721,
+          "negative": 199,
+          "neutral": 29,
+          "conflict": 7
+        },
+        "test": {
+          "positive": 319,
+          "negative": 179,
+          "neutral": 27,
+          "conflict": 17
+        },
+        "few_shot": {
+          "positive": 29,
+          "negative": 16,
+          "neutral": 3,
+          "conflict": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3475 @@
+[
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "I always have used a tower home PC and jumped to the laptop and have been very satisfied with its performance.",
+    "aspects": [
+      [
+        "performance",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "I also liked the glass screen.",
+    "aspects": [
+      [
+        "glass screen",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "The only bad part is the size/weight.",
+    "aspects": [
+      [
+        "size",
+        "negative"
+      ],
+      [
+        "weight",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "Its Office compatible, but the features and its functioning is all new again so you might as well save the money and just learn the pre installed mac programs.",
+    "aspects": [
+      [
+        "Office",
+        "positive"
+      ],
+      [
+        "features",
+        "neutral"
+      ],
+      [
+        "functioning",
+        "neutral"
+      ],
+      [
+        "programs",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "My real problem with it? The statement of 7 hour battery life is not just mere exaggeration -- it's a lie.",
+    "aspects": [
+      [
+        "battery life",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "It started out by randomly ceasing to charge when it was plugged in (mousing over the battery icon would read, for example, \"74%, plugged in, not charging\"), requiring me to unplug it and plug it back in several times to get it to charge.",
+    "aspects": [
+      [
+        "charge",
+        "negative"
+      ],
+      [
+        "charging",
+        "negative"
+      ],
+      [
+        "charge",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "super fast processor and really nice graphics card..",
+    "aspects": [
+      [
+        "processor",
+        "positive"
+      ],
+      [
+        "graphics card",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "One night I turned the freaking thing off after using it, the next day I turn it on, no GUI, screen all dark, power light steady, hard drive light steady and not flashing as it usually does.",
+    "aspects": [
+      [
+        "GUI",
+        "negative"
+      ],
+      [
+        "screen",
+        "negative"
+      ],
+      [
+        "power light",
+        "neutral"
+      ],
+      [
+        "hard drive light",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "Support has been lackluster and now I just want a refund.",
+    "aspects": [
+      [
+        "Support",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "Its fast, has High definition quality in the videos.",
+    "aspects": [
+      [
+        "High definition quality",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "EITHER THE COMPUTER IS TOO SLOW TO DETECT THE KEYS TYPED (THIS IS UNLIKELY AS I AM A SLOW TYPIST) OR THE KEYBOARD SIMPLY DOES NOT DETECT THE KEYS BEING TYPED.",
+    "aspects": [
+      [
+        "KEYS",
+        "negative"
+      ],
+      [
+        "KEYBOARD",
+        "negative"
+      ],
+      [
+        "KEYS",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "Its pretty fast and does not have hiccups while I am using it for web browsing, uploading photos, watching movies (720p) on occasion and creating presentations.",
+    "aspects": [
+      [
+        "web browsing",
+        "positive"
+      ],
+      [
+        "uploading photos",
+        "positive"
+      ],
+      [
+        "watching movies",
+        "positive"
+      ],
+      [
+        "creating presentations",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "they improved nothing else such as Resolution, appearance, cooling system, graphics card, etc.",
+    "aspects": [
+      [
+        "Resolution",
+        "negative"
+      ],
+      [
+        "appearance",
+        "negative"
+      ],
+      [
+        "cooling system",
+        "negative"
+      ],
+      [
+        "graphics card",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "It works really well.",
+    "aspects": [
+      [
+        "works",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "Windows also shuts the computer down for no reason without warning.",
+    "aspects": [
+      [
+        "Windows",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "PC users use the Powerpoint program for slide-show presentation and Mac users utilize Keynote.",
+    "aspects": [
+      [
+        "Powerpoint program",
+        "neutral"
+      ],
+      [
+        "Keynote",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "I had of course bought a 3 year warranty, so I sent it in to be replaced and (almost 2 months later) the dv4 is what the sent me as a replacement.",
+    "aspects": [
+      [
+        "3 year warranty",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "Pairing it with an iPhone is a pure pleasure - talk about painless syncing - used to take me forever - now it's a snap.",
+    "aspects": [
+      [
+        "syncing",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "My main reason to convert was the imovie program.",
+    "aspects": [
+      [
+        "imovie program",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "The capabilities using that program alone made me want a Mac.",
+    "aspects": [
+      [
+        "program",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "It runs very quiet too which is a plus.",
+    "aspects": [
+      [
+        "runs",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "Games being the main issue.",
+    "aspects": [
+      [
+        "Games",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "Windows Vista makes this computer almost unusable for online service.",
+    "aspects": [
+      [
+        "Windows Vista",
+        "negative"
+      ],
+      [
+        "online service",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "If you really want a bang-up system and don't need to run Windows applications, go with an Apple;",
+    "aspects": [
+      [
+        "system",
+        "positive"
+      ],
+      [
+        "Windows applications",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "I never had this kind of quality issue with Dell (not to say Dell is that great), not with a brand new laptop.",
+    "aspects": [
+      [
+        "quality",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "The battery holds up well, it's built very solidly, and runs fast.",
+    "aspects": [
+      [
+        "battery",
+        "positive"
+      ],
+      [
+        "built",
+        "positive"
+      ],
+      [
+        "runs",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "It absolutely is more expensive than most PC laptops, but the ease of use, security, and minimal problems that have arisen make it well worth the pricetag.",
+    "aspects": [
+      [
+        "use",
+        "positive"
+      ],
+      [
+        "security",
+        "positive"
+      ],
+      [
+        "pricetag",
+        "conflict"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "It is fast booting up , shutting down, and connection with the internet.",
+    "aspects": [
+      [
+        "booting up",
+        "positive"
+      ],
+      [
+        "shutting down",
+        "positive"
+      ],
+      [
+        "connection with the internet",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "Overall I feel this netbook was poor quality, had poor performance, although it did have great battery life when it did work.",
+    "aspects": [
+      [
+        "quality",
+        "negative"
+      ],
+      [
+        "performance",
+        "negative"
+      ],
+      [
+        "battery life",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 2,
+    "sentence": "The laptop has great battery life but slow processing speed.",
+    "aspects": [
+      [
+        "battery life",
+        "positive"
+      ],
+      [
+        "processing speed",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "You can't even get a satellite card which is why I bought to begin with.",
+    "aspects": [
+      [
+        "satellite card",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Not to mention, the battery life is absolutely amazing.",
+    "aspects": [
+      [
+        "battery life",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Only other thing is that if you are using this for document creation Apple doesnt provide any kind of word processor (such as works for windows), but iwork is cheap compared to office.",
+    "aspects": [
+      [
+        "document creation",
+        "neutral"
+      ],
+      [
+        "word processor",
+        "negative"
+      ],
+      [
+        "windows",
+        "neutral"
+      ],
+      [
+        "iwork",
+        "positive"
+      ],
+      [
+        "office",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "It is easy to navigate and update programs.",
+    "aspects": [
+      [
+        "navigate",
+        "positive"
+      ],
+      [
+        "update programs",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Unless you want to be inconvenienced with a non working power supply which you can't find a replacement for because they made the attachment so small.",
+    "aspects": [
+      [
+        "power supply",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "I like how the Mac OS is so simple and easy to use.",
+    "aspects": [
+      [
+        "Mac OS",
+        "positive"
+      ],
+      [
+        "use",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "i love the size of the computer since i play games on it.",
+    "aspects": [
+      [
+        "size",
+        "positive"
+      ],
+      [
+        "games",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "This purchase opened me to the world of Macbooks, and I am impressed with the intuition of the design, the beauty of the product, and the excellent technological advances associated with it.",
+    "aspects": [
+      [
+        "design",
+        "positive"
+      ],
+      [
+        "beauty",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "This was the 3rd day and part still had not been shipped.",
+    "aspects": [
+      [
+        "shipped",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The system constantly overheats, the battery life is too short, the case is coming apart, and my core applications that I use every day in my work as a graphic artist run poorly.",
+    "aspects": [
+      [
+        "system",
+        "negative"
+      ],
+      [
+        "battery life",
+        "negative"
+      ],
+      [
+        "case",
+        "negative"
+      ],
+      [
+        "core applications",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "I thought the price was great for the specs.",
+    "aspects": [
+      [
+        "price",
+        "positive"
+      ],
+      [
+        "specs",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "I was disappointed when I realized that the keyboard doesn't light up on this model.",
+    "aspects": [
+      [
+        "keyboard",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The computer is currently in West Verginia doe to the method of shipping choosen by Toshiba.",
+    "aspects": [
+      [
+        "shipping",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The laptop is relatively simple to use, though I bought  Macs for Dummies,  which is well worth $2",
+    "aspects": [
+      [
+        "use",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "I love the operating system and the preloaded software.",
+    "aspects": [
+      [
+        "operating system",
+        "positive"
+      ],
+      [
+        "preloaded software",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Your cursor will end up all over the freaking place,,,it's not uncommon for me to accidentally delete words, sentences, paragraphs because of this mousepad.",
+    "aspects": [
+      [
+        "cursor",
+        "negative"
+      ],
+      [
+        "mousepad",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The right speaker did not work.",
+    "aspects": [
+      [
+        "right speaker",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "It also does not have bluetooth.",
+    "aspects": [
+      [
+        "bluetooth",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Yes, I thought the expese was a little much, but I now realize you get what you pay for.",
+    "aspects": [
+      [
+        "expese",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The Mac takes about the same amount of starting-up time as the average PC, but keeps itself cleaned up and ready to use.",
+    "aspects": [
+      [
+        "starting-up time",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Returned laptop for repair a 2nd time and it came back with obvious physical damage (keyboard bulging and speaker grill pressed in), buttons not working and USB ports inoperative.",
+    "aspects": [
+      [
+        "keyboard",
+        "negative"
+      ],
+      [
+        "speaker grill",
+        "negative"
+      ],
+      [
+        "buttons",
+        "negative"
+      ],
+      [
+        "USB ports",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "I'm having the laptop returned unrepaired since paying $176 every 3  months just isn't worth it (that's about how long the port seems to  last).",
+    "aspects": [
+      [
+        "port",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "This is a review of windows vista system.",
+    "aspects": [
+      [
+        "windows vista system",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "the headphone and mic jack are in front of touch-pad making the touch-pad hard to use when using headphones/mic, not to mention the laptop was designed for right handed person.",
+    "aspects": [
+      [
+        "headphone",
+        "negative"
+      ],
+      [
+        "mic jack",
+        "negative"
+      ],
+      [
+        "touch-pad",
+        "neutral"
+      ],
+      [
+        "touch-pad",
+        "negative"
+      ],
+      [
+        "headphones",
+        "negative"
+      ],
+      [
+        "mic",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The Macbook is also made better, my computer has never got a virus, and the laptop runs just as fast as the first day I bought it.",
+    "aspects": [
+      [
+        "runs",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The pricing is very competitive.",
+    "aspects": [
+      [
+        "pricing",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The only thing i can say is that the touch pad doesnt work like it should all the time.",
+    "aspects": [
+      [
+        "touch pad",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "I bought this last week, and the very next day had to return it because it over heated and the touch-mouse stopped responding.",
+    "aspects": [
+      [
+        "touch-mouse",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Battery life needs more life.",
+    "aspects": [
+      [
+        "Battery life",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "So what am I supposed to do?  The LG service center cannot provide me the \"service\" when it is called the \"service center\".",
+    "aspects": [
+      [
+        "LG service center",
+        "negative"
+      ],
+      [
+        "service",
+        "negative"
+      ],
+      [
+        "service center",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The resolution is even higher then any other laptop on the market.",
+    "aspects": [
+      [
+        "resolution",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "This computer was so challenging to carry and handle.",
+    "aspects": [
+      [
+        "carry",
+        "negative"
+      ],
+      [
+        "handle",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The tech guy then said the service center does not do 1-to-1 exchange and I have to direct my concern to the \"sales\" team, which is the retail shop which I bought my netbook from.",
+    "aspects": [
+      [
+        "tech guy",
+        "neutral"
+      ],
+      [
+        "service center",
+        "negative"
+      ],
+      [
+        "\"sales\" team",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The Apple team also assists you very nicely when choosing which computer is right for you :)",
+    "aspects": [
+      [
+        "Apple team",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "This is a great little computer for the price.",
+    "aspects": [
+      [
+        "price",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The difference is it's a whole lot of fun using the laptop now, still learning the Apple navigation, but is fun and comes with a lot of cool apps.",
+    "aspects": [
+      [
+        "Apple navigation",
+        "neutral"
+      ],
+      [
+        "apps",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "It is a REAL touchpad, not the toy I saw in other brands.",
+    "aspects": [
+      [
+        "touchpad",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Small screen somewhat limiting but great for travel.",
+    "aspects": [
+      [
+        "screen",
+        "conflict"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "However the frozen screens kept happening.",
+    "aspects": [
+      [
+        "screens",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "I was looking too closely at the other performance specs and while comparing, I took it for granted that these features were standard.",
+    "aspects": [
+      [
+        "performance specs",
+        "neutral"
+      ],
+      [
+        "features",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The difference in the Apple keyboard from a PC's keyboard took a bit of tim to get used to, but overall it's worth it!",
+    "aspects": [
+      [
+        "Apple keyboard",
+        "neutral"
+      ],
+      [
+        "PC's keyboard",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Take your time and go through the tutorials patiently.",
+    "aspects": [
+      [
+        "tutorials",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Boots up fast and runs great!",
+    "aspects": [
+      [
+        "Boots up",
+        "positive"
+      ],
+      [
+        "runs",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "The i5 blows my desktop out of the water when it comes to rendering videos.",
+    "aspects": [
+      [
+        "i5",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "It weighed like seven pounds or something like that.",
+    "aspects": [
+      [
+        "weighed",
+        "neutral"
+      ],
+      [
+        "seven pounds",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "I wasn't really as concerned about portability (it's a very large laptop) but it's not hard to move around or take on a trip which was a pleasant surprise.",
+    "aspects": [
+      [
+        "portability",
+        "conflict"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "While most people say that PCs hold functionality and value and Macs are just pretty to look at, I think there's something to be said about the simplicity of Macs.",
+    "aspects": [
+      [
+        "functionality",
+        "positive"
+      ],
+      [
+        "value",
+        "positive"
+      ],
+      [
+        "look",
+        "positive"
+      ],
+      [
+        "simplicity",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "It even has a great webcam, and Skype works very well.",
+    "aspects": [
+      [
+        "webcam",
+        "positive"
+      ],
+      [
+        "Skype",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Bigger HD, better graphics card, and a bid HD.",
+    "aspects": [
+      [
+        "HD",
+        "positive"
+      ],
+      [
+        "graphics card",
+        "positive"
+      ],
+      [
+        "HD",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": ") I also purchased  Applecare  for $300, which is a three year extended warranty, since I ve never seen any laptop that lasted more than two.",
+    "aspects": [
+      [
+        "Applecare",
+        "neutral"
+      ],
+      [
+        "extended warranty",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Toshiba is aware of the issue but unless the extended warrenty is bought Toshiba will do nothing about it.",
+    "aspects": [
+      [
+        "extended warrenty",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Wonderful zooming.",
+    "aspects": [
+      [
+        "zooming",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "I took off a star because the machine has a lot of junk software on it.",
+    "aspects": [
+      [
+        "software",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "It drives me crazy when I want to download a game or something of that nature and I can't play it because its not compatable with the software.",
+    "aspects": [
+      [
+        "software",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "I also got the added bonus of a 30\" HD Monitor, which really helps to extend my screen and keep my eyes fresh!",
+    "aspects": [
+      [
+        "30\" HD Monitor",
+        "positive"
+      ],
+      [
+        "screen",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "I need graphic power to run my Adobe Creative apps efficiently.",
+    "aspects": [
+      [
+        "graphic power",
+        "neutral"
+      ],
+      [
+        "Adobe Creative apps",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Crisp screen, great battery life, and plenty of storage.",
+    "aspects": [
+      [
+        "screen",
+        "positive"
+      ],
+      [
+        "battery life",
+        "positive"
+      ],
+      [
+        "storage",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "of course my warranty runs out next month.",
+    "aspects": [
+      [
+        "warranty",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "lap",
+    "shot_size": 5,
+    "sentence": "Can listen to my music and watch my videos with ease and with a great display.",
+    "aspects": [
+      [
+        "display",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Winnie and her staff are the best crew you can find serving you.",
+    "aspects": [
+      [
+        "staff",
+        "positive"
+      ],
+      [
+        "crew",
+        "positive"
+      ],
+      [
+        "serving",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "The bar is very well stocked with interesting beers and well priced wines.",
+    "aspects": [
+      [
+        "bar",
+        "positive"
+      ],
+      [
+        "beers",
+        "positive"
+      ],
+      [
+        "priced",
+        "positive"
+      ],
+      [
+        "wines",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Went on a 3 day oyster binge, with Fish bringing up the closing, and I am so glad this was the place it O trip ended, because it was so great!",
+    "aspects": [
+      [
+        "oyster",
+        "neutral"
+      ],
+      [
+        "Fish",
+        "neutral"
+      ],
+      [
+        "place",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "If your favorite Chinese food is General Tao chicken, then this is NOT your place.",
+    "aspects": [
+      [
+        "Chinese food",
+        "neutral"
+      ],
+      [
+        "General Tao chicken",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "You must try the shrimp appetizers.",
+    "aspects": [
+      [
+        "shrimp appetizers",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "We've been to Grocery three times and not once has an item on the menu disappointed.",
+    "aspects": [
+      [
+        "menu",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Very excited to hear that short-term Chef Jason Narone has moved on, he truly was a low point of their Sterling track record.",
+    "aspects": [
+      [
+        "Chef",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "love the food.",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "The portions are now very small, the sauces are overly-ambitious usually inedible while the service is still good, the restaurant, due to its popularity, seems frantic.",
+    "aspects": [
+      [
+        "portions",
+        "negative"
+      ],
+      [
+        "sauces",
+        "negative"
+      ],
+      [
+        "service",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Good spreads, great beverage selections and bagels really tasty.",
+    "aspects": [
+      [
+        "spreads",
+        "positive"
+      ],
+      [
+        "beverage selections",
+        "positive"
+      ],
+      [
+        "bagels",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Good crowd, good outdoor seating, with a hip japanese vibe.",
+    "aspects": [
+      [
+        "outdoor seating",
+        "positive"
+      ],
+      [
+        "vibe",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Obv caviar is top of the line but the rest of the menu is so diverse it gives you a chance to taste so manydifferent varietys.",
+    "aspects": [
+      [
+        "Obv caviar",
+        "positive"
+      ],
+      [
+        "menu",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "I've been to this restaurant more than a dozen times and when I'm craving for Pho, Lemon grass chicken or Beef Cube on rice, this is the place to go.",
+    "aspects": [
+      [
+        "Pho",
+        "positive"
+      ],
+      [
+        "Lemon grass chicken",
+        "positive"
+      ],
+      [
+        "Beef Cube on rice",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Guacamole+shrimp appetizer was really great, we both had the filet, very good, didn't much like the frites that came with, but the filet was so good, neither of us cared.",
+    "aspects": [
+      [
+        "Guacamole+shrimp appetizer",
+        "positive"
+      ],
+      [
+        "filet",
+        "positive"
+      ],
+      [
+        "frites",
+        "negative"
+      ],
+      [
+        "filet",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "The best thing I tasted were the lambchops.",
+    "aspects": [
+      [
+        "lambchops",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "If anyones has doubt of not knowing enough about wines,please check their wine list.",
+    "aspects": [
+      [
+        "wines",
+        "neutral"
+      ],
+      [
+        "wine list",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "The desserts are more appealing then stuffy overpriced French restaurants.",
+    "aspects": [
+      [
+        "desserts",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Prices are in line.",
+    "aspects": [
+      [
+        "Prices",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Other guests enjoyed pizza, santa fe chopped salad and fish and chips.",
+    "aspects": [
+      [
+        "pizza",
+        "positive"
+      ],
+      [
+        "santa fe chopped salad",
+        "positive"
+      ],
+      [
+        "fish and chips",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Largest and freshest pieces of sushi, and delicious!",
+    "aspects": [
+      [
+        "pieces of sushi",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Food is average, and I would say even the chain restaurant Baluchi's tastes better.",
+    "aspects": [
+      [
+        "Food",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "I've overheard comments from him to his employees that should not have been delivered in the dining area and I've been sitting there while he lectured another customer.",
+    "aspects": [
+      [
+        "employees",
+        "negative"
+      ],
+      [
+        "dining area",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Service here was great, food was fantastic.",
+    "aspects": [
+      [
+        "Service",
+        "positive"
+      ],
+      [
+        "food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "We've been following chef Lyle's food around New York for 15 years and while remaining classic, his innovations with bistro fare have made us return and return.",
+    "aspects": [
+      [
+        "chef",
+        "positive"
+      ],
+      [
+        "food",
+        "positive"
+      ],
+      [
+        "bistro fare",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "This restaurant is a wonderful place to go many times and it is reasonably priced.",
+    "aspects": [
+      [
+        "priced",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "We were worried we would have trouble getting in, but somehow managed to have a short wait.",
+    "aspects": [
+      [
+        "wait",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "If you want good authentic Thai this place is not the place to go.",
+    "aspects": [
+      [
+        "Thai",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "Definitely not worth the price!",
+    "aspects": [
+      [
+        "price",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "The Thai food is good.",
+    "aspects": [
+      [
+        "Thai food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "If you like the food and the value you get from some of Chinatown restaurants, this is not the place for you.",
+    "aspects": [
+      [
+        "food",
+        "neutral"
+      ],
+      [
+        "value",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "The food is great and authentic.",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "We began with the cheese fondue (the artisanal blend) and added apples and kielbasa to dip.",
+    "aspects": [
+      [
+        "cheese fondue",
+        "neutral"
+      ],
+      [
+        "apples",
+        "neutral"
+      ],
+      [
+        "kielbasa",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "The fries are yummy.",
+    "aspects": [
+      [
+        "fries",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 2,
+    "sentence": "The server was really cool and served us our food and drinks with a smile.",
+    "aspects": [
+      [
+        "server",
+        "positive"
+      ],
+      [
+        "served",
+        "positive"
+      ],
+      [
+        "food",
+        "neutral"
+      ],
+      [
+        "drinks",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "the drinks are amazing and half off till 8pm.",
+    "aspects": [
+      [
+        "drinks",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The menu seemed to have a wide variety of dishes for seafood lovers and interesting ways of preparing them.",
+    "aspects": [
+      [
+        "menu",
+        "positive"
+      ],
+      [
+        "variety of dishes",
+        "positive"
+      ],
+      [
+        "seafood",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "I'm happy to have Nosh in the neighborhood and the food is very comforting.",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The wine list is also really nice.",
+    "aspects": [
+      [
+        "wine list",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "I went here with a friend on a whim, we went someplace else first and couldn't get a table.",
+    "aspects": [
+      [
+        "table",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The only problem is that the manager is a complete incompetent.",
+    "aspects": [
+      [
+        "manager",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Nha Trang, while being notorious for utter lack of comfort and decor, horribly slow wait staff and horribly quick meals, is one of the best vietnamese restaurants i've ever been to. the pho is delicious and comes with very fresh vegtables.",
+    "aspects": [
+      [
+        "comfort",
+        "negative"
+      ],
+      [
+        "decor",
+        "negative"
+      ],
+      [
+        "wait staff",
+        "negative"
+      ],
+      [
+        "meals",
+        "negative"
+      ],
+      [
+        "pho",
+        "positive"
+      ],
+      [
+        "vegtables",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Super friendly and knowledgable staff, fabulous bistro fare and a wonderful jazz brunch with great live jazz (the chilaquiles were awesome!",
+    "aspects": [
+      [
+        "staff",
+        "positive"
+      ],
+      [
+        "bistro fare",
+        "positive"
+      ],
+      [
+        "jazz brunch",
+        "positive"
+      ],
+      [
+        "live jazz",
+        "positive"
+      ],
+      [
+        "chilaquiles",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "kalbi and nebbiolo do work together.",
+    "aspects": [
+      [
+        "kalbi",
+        "neutral"
+      ],
+      [
+        "nebbiolo",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Decent wine selection too.",
+    "aspects": [
+      [
+        "wine selection",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "We all ate pasta entre'es, which were great.",
+    "aspects": [
+      [
+        "pasta entre'es",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "While most people can attest to spending over $50 on drinks in New York bars and hardly feeling a thing, the drinks here are plentiful and unique.",
+    "aspects": [
+      [
+        "drinks",
+        "negative"
+      ],
+      [
+        "bars",
+        "negative"
+      ],
+      [
+        "drinks",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "We could only get through an appetizer and cheese fondue.",
+    "aspects": [
+      [
+        "appetizer",
+        "neutral"
+      ],
+      [
+        "cheese fondue",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "You must have the crabmeat lasagna which is out of this world and the chocolate bread pudding for dessert.",
+    "aspects": [
+      [
+        "crabmeat lasagna",
+        "positive"
+      ],
+      [
+        "chocolate bread pudding",
+        "positive"
+      ],
+      [
+        "dessert",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "We had champagne and caviar and felt like princesses!",
+    "aspects": [
+      [
+        "champagne",
+        "positive"
+      ],
+      [
+        "caviar",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The food was just awful, ATROCIOUS actually.",
+    "aspects": [
+      [
+        "food",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "skip dessert.",
+    "aspects": [
+      [
+        "dessert",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Fast service.",
+    "aspects": [
+      [
+        "service",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The food was pretty good, but a little flavorless and the portions very small, including dessert.",
+    "aspects": [
+      [
+        "food",
+        "conflict"
+      ],
+      [
+        "portions",
+        "negative"
+      ],
+      [
+        "dessert",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Dip the ingredients in with your chopsticks, swirl them around, and eat.",
+    "aspects": [
+      [
+        "ingredients",
+        "neutral"
+      ],
+      [
+        "chopsticks",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "And, atlhough tables opened up next to us and we ASKED for a slightly larger space, they left us awkardly seated.",
+    "aspects": [
+      [
+        "tables",
+        "neutral"
+      ],
+      [
+        "space",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "My chow fun and chow see was really bland and oily.",
+    "aspects": [
+      [
+        "chow fun and chow see",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Thius is a must for anyone who loves Shabu-Shabu.",
+    "aspects": [
+      [
+        "Shabu-Shabu",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "They did not have mayonnaise, forgot our toast, left out ingredients (ie cheese in an omelet), below hot temperatures and the bacon was so over cooked it crumbled on the plate when you touched it.",
+    "aspects": [
+      [
+        "mayonnaise",
+        "negative"
+      ],
+      [
+        "toast",
+        "negative"
+      ],
+      [
+        "ingredients",
+        "negative"
+      ],
+      [
+        "cheese",
+        "neutral"
+      ],
+      [
+        "omelet",
+        "neutral"
+      ],
+      [
+        "bacon",
+        "negative"
+      ],
+      [
+        "plate",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "While the place is not a hotspot hangout, the drinks are unique and pack a lot of bang for the buck.",
+    "aspects": [
+      [
+        "place",
+        "negative"
+      ],
+      [
+        "drinks",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The noise level was unbearable, conversation impossible.",
+    "aspects": [
+      [
+        "noise level",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "We love the food, drinks, and atmosphere!",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ],
+      [
+        "drinks",
+        "positive"
+      ],
+      [
+        "atmosphere",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "I recommend their Pad See Ew, Pork Chops or Tofu plates.",
+    "aspects": [
+      [
+        "Pad See Ew",
+        "positive"
+      ],
+      [
+        "Pork Chops",
+        "positive"
+      ],
+      [
+        "Tofu plates",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The food is fresh, delicious, and reasonably priced.",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ],
+      [
+        "priced",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "One thing I liked about this place is that I never felt rushed or pressured to give up my table ot incoming guests.",
+    "aspects": [
+      [
+        "table",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "We had a girls' night dinner here for restaurant week.",
+    "aspects": [
+      [
+        "dinner",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "We had Pam's special fried fish and it was amazing.",
+    "aspects": [
+      [
+        "Pam's special fried fish",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The food is tasty and portion sizes are appropriate.",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ],
+      [
+        "portion sizes",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "We went to eat at the Jekyll and Hyde restaurant on Friday night and really enjoyed the fun atmosphere and good food.",
+    "aspects": [
+      [
+        "atmosphere",
+        "positive"
+      ],
+      [
+        "food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Staffs are not that friendly, but the taste covers all.",
+    "aspects": [
+      [
+        "Staffs",
+        "negative"
+      ],
+      [
+        "taste",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Lunch came with pickels and slaw, no extra charge.",
+    "aspects": [
+      [
+        "Lunch",
+        "positive"
+      ],
+      [
+        "pickels and slaw",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "At the end you're left with a mild broth with noodles that you can slurp out of a cup.",
+    "aspects": [
+      [
+        "broth with noodles",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "All conveniently delivered right to the door.",
+    "aspects": [
+      [
+        "delivered",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "You will pay a lot for the decore, but the food is no better or worse than a lot of other Chinese and Asian fusion places in NY.",
+    "aspects": [
+      [
+        "decore",
+        "negative"
+      ],
+      [
+        "food",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "I ate clams oreganta and spectacular salad with perfectly marinated cucumbers and tomatoes with lots of shrimp and basil.",
+    "aspects": [
+      [
+        "clams oreganta",
+        "positive"
+      ],
+      [
+        "salad with perfectly marinated cucumbers and tomatoes with lots of shrimp and basil",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Definitely not worth the price!",
+    "aspects": [
+      [
+        "price",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The pizza was great.",
+    "aspects": [
+      [
+        "pizza",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Service was decent, but not as smooth as I would expect from a place with these prices and reputation.",
+    "aspects": [
+      [
+        "Service",
+        "conflict"
+      ],
+      [
+        "prices",
+        "negative"
+      ],
+      [
+        "reputation",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The miso soup lacked flavor and the fish was unfortunately not as well prepared as in the past.",
+    "aspects": [
+      [
+        "miso soup",
+        "negative"
+      ],
+      [
+        "flavor",
+        "negative"
+      ],
+      [
+        "fish",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The quail was fantastic and unique and the pastas were full of flavor.",
+    "aspects": [
+      [
+        "quail",
+        "positive"
+      ],
+      [
+        "pastas",
+        "positive"
+      ],
+      [
+        "flavor",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Next time, we wouldn't dare ordering anything else other than some simple Asian appetizers and drinks.",
+    "aspects": [
+      [
+        "Asian appetizers",
+        "positive"
+      ],
+      [
+        "drinks",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The waitstaff were attentive, polite and helpful - an impressive feat in such close quarters.",
+    "aspects": [
+      [
+        "waitstaff",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Try the Times Square cocktail -- ginger lemonade with vodka (also available without vodka.)",
+    "aspects": [
+      [
+        "Times Square cocktail",
+        "positive"
+      ],
+      [
+        "ginger lemonade with vodka",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The first 2 courses were very good, but the chocolate sampler was too rich for me and the dessert wine far too sweet.",
+    "aspects": [
+      [
+        "courses",
+        "positive"
+      ],
+      [
+        "chocolate sampler",
+        "negative"
+      ],
+      [
+        "dessert wine",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "So some of the reviews here are accurate about the crowd and noise.",
+    "aspects": [
+      [
+        "crowd",
+        "negative"
+      ],
+      [
+        "noise",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The dim sum servings here are a bit larger than I'm used to.",
+    "aspects": [
+      [
+        "dim sum servings",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Ambiance- relaxed and stylish.",
+    "aspects": [
+      [
+        "Ambiance",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "We had a great tiem watching the shows and characters and ar food was just what we were looking for.",
+    "aspects": [
+      [
+        "shows",
+        "positive"
+      ],
+      [
+        "characters",
+        "positive"
+      ],
+      [
+        "food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Service is highly refined: our seating was delayed 35 minutes past our reservation and the maitre d' apologized and regularly kept us apprised of progress.",
+    "aspects": [
+      [
+        "Service",
+        "positive"
+      ],
+      [
+        "reservation",
+        "negative"
+      ],
+      [
+        "maitre",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The Italian food has flavor (that can be sort of surprising on the UES), and the service turns from a nightmare to attentive,they sort of remind me of the NY Yankees of the late 90's, no matter how bad it look, you knew that there was a rally just around the corner...",
+    "aspects": [
+      [
+        "Italian food",
+        "positive"
+      ],
+      [
+        "service",
+        "conflict"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Quality ingredients preparation all around, and a very fair price for NYC.",
+    "aspects": [
+      [
+        "ingredients",
+        "positive"
+      ],
+      [
+        "price",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The restaurant looks out over beautiful green lawns to the Hudson River and the Statue of Liberty.",
+    "aspects": [
+      [
+        "lawns",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Went for a late weekday lunch.",
+    "aspects": [
+      [
+        "lunch",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Went there for an office lunch.",
+    "aspects": [
+      [
+        "office lunch",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Sushi wasn't anything spectacular for the price.",
+    "aspects": [
+      [
+        "Sushi",
+        "neutral"
+      ],
+      [
+        "price",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Although the tables may be closely situated, the candle-light, food-quality and service overcompensate.",
+    "aspects": [
+      [
+        "tables",
+        "negative"
+      ],
+      [
+        "candle-light",
+        "positive"
+      ],
+      [
+        "food-quality",
+        "positive"
+      ],
+      [
+        "service",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The whole set up is truly unprofessional and I wish Cafe Noir would get some good staff, because despite the current one this is a great place.",
+    "aspects": [
+      [
+        "staff",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "We were on our way back to NJ, and since I am in NY, we figured why not grab some food?",
+    "aspects": [
+      [
+        "food",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Please try the Filet Mignon, its just the most tender piece ever.",
+    "aspects": [
+      [
+        "Filet Mignon",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Will have to return to try the chocolate!",
+    "aspects": [
+      [
+        "chocolate",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Diner food at bistro prices is a bummer....",
+    "aspects": [
+      [
+        "food",
+        "negative"
+      ],
+      [
+        "prices",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "But for whatever reason, prices are about twice as high.",
+    "aspects": [
+      [
+        "prices",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "My friend's food was also the complete opposite of what it's supposed to taste like (aND look like).",
+    "aspects": [
+      [
+        "food",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The service was fast and friendly and the food was very tasty and they had the best hot sauce to add to your meals.",
+    "aspects": [
+      [
+        "service",
+        "positive"
+      ],
+      [
+        "food",
+        "positive"
+      ],
+      [
+        "hot sauce",
+        "positive"
+      ],
+      [
+        "meals",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "A++   The service was good to excellent along with the attitude.",
+    "aspects": [
+      [
+        "service",
+        "positive"
+      ],
+      [
+        "attitude",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "The service was attentive.",
+    "aspects": [
+      [
+        "service",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "I went there for lunch and it was not as good as I expected from the reviews I read.",
+    "aspects": [
+      [
+        "lunch",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Good food.",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "Emilio, the owner, is often sitting in the front table greeting guests as they come and go.",
+    "aspects": [
+      [
+        "owner",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "i would recommend reservations on weekends though.",
+    "aspects": [
+      [
+        "reservations",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res",
+    "shot_size": 5,
+    "sentence": "service is friendly, and never had a problem walking in and getting a table.",
+    "aspects": [
+      [
+        "service",
+        "positive"
+      ],
+      [
+        "getting a table",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "We went here for lunch a couple of weeks ago on a Saturday, and I was thoroughly impressed with the food.",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "Friendly staff that actually lets you enjoy your meal and the company you're with.",
+    "aspects": [
+      [
+        "staff",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "Very good wine choices.",
+    "aspects": [
+      [
+        "wine choices",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "The pasta penne was pretty extra buttery, creamy which means a big task to diggest.. tasty at first but i would say that i was full with a slice of pizza and 7 to count, penne...got a little moody afterwards cause was stuffed...lol",
+    "aspects": [
+      [
+        "pasta penne",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "Make sure you have the Spicy Scallop roll.. .",
+    "aspects": [
+      [
+        "Spicy Scallop roll",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "The hostess and the waitress were incredibly rude and did everything they could to rush us out.",
+    "aspects": [
+      [
+        "hostess",
+        "negative"
+      ],
+      [
+        "waitress",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "The freshest, best variety, and the fastest delivery.",
+    "aspects": [
+      [
+        "delivery",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "Service is average.",
+    "aspects": [
+      [
+        "Service",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "Service was also horrible and the ambience is not that great.",
+    "aspects": [
+      [
+        "Service",
+        "negative"
+      ],
+      [
+        "ambience",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "Try green curry with vegetables.",
+    "aspects": [
+      [
+        "green curry with vegetables",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "A gentleman, maybe the manager, came to our table, and without so much as a smile or greeting asked for our order.",
+    "aspects": [
+      [
+        "gentleman",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "Mermaid Inn is an overall good restaurant with really good seafood.",
+    "aspects": [
+      [
+        "Mermaid Inn",
+        "positive"
+      ],
+      [
+        "seafood",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 2,
+    "sentence": "You must have the crabmeat lasagna which is out of this world and the chocolate bread pudding for dessert.",
+    "aspects": [
+      [
+        "crabmeat lasagna",
+        "positive"
+      ],
+      [
+        "chocolate bread pudding",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "This restaurant was way overhyped.",
+    "aspects": [
+      [
+        "restaurant",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "The last two times I ordered from here my food was soo spicy that  I could barely eat it, and the spice took away from the flavor of the dish.",
+    "aspects": [
+      [
+        "food",
+        "negative"
+      ],
+      [
+        "spice",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Great atmoshere and worth every bit.",
+    "aspects": [
+      [
+        "atmoshere",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "However, go for the ambience, and consider the food just a companion for a trip across the world!",
+    "aspects": [
+      [
+        "ambience",
+        "positive"
+      ],
+      [
+        "food",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "After really enjoying ourselves at the bar we sat down at a table and had dinner.",
+    "aspects": [
+      [
+        "bar",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "The service is awful.",
+    "aspects": [
+      [
+        "service",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Yakitori (bbq meats) is tasty too.",
+    "aspects": [
+      [
+        "Yakitori (bbq meats)",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Great vibe, lots of people.",
+    "aspects": [
+      [
+        "vibe",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "The tables are crammed way too close, the menu is typical of any Italian restaurant, and the wine list is simply overpriced.",
+    "aspects": [
+      [
+        "tables",
+        "negative"
+      ],
+      [
+        "menu",
+        "neutral"
+      ],
+      [
+        "wine list",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "It's a nice place to relax and have conversation.",
+    "aspects": [
+      [
+        "place",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "I really liked this place.",
+    "aspects": [
+      [
+        "place",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "If you want something really different than try Jekyll and Hyde.",
+    "aspects": [
+      [
+        "Jekyll and Hyde",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Our food was great too!",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "I am not a vegetarian but, almost all the dishes were great.",
+    "aspects": [
+      [
+        "dishes",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "For the people who want great food plus great service, Roxy is a place to AVOID!",
+    "aspects": [
+      [
+        "food",
+        "negative"
+      ],
+      [
+        "service",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "All the staff is absolutely professional!!",
+    "aspects": [
+      [
+        "staff",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "The service is good and ambience is good for a date or group outing.",
+    "aspects": [
+      [
+        "service",
+        "positive"
+      ],
+      [
+        "ambience",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "I have reservations about the all you can eat deal, however -- the choices are fairly limited and you can probably order more food than you can eat for less than $18 by just going off the menu.",
+    "aspects": [
+      [
+        "all you can eat deal",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Avoid this place!",
+    "aspects": [
+      [
+        "place",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "If we were to move from the upper east side, we would genuinely miss this restaurant.",
+    "aspects": [
+      [
+        "restaurant",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Excellent spot for holiday get togethers with co-workers or friends that you haven't seen in a while.",
+    "aspects": [
+      [
+        "spot",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Yes, they use fancy ingredients, but even fancy ingredients don't make for good pizza unless someone knows how to get the crust right.",
+    "aspects": [
+      [
+        "ingredients",
+        "positive"
+      ],
+      [
+        "pizza",
+        "negative"
+      ],
+      [
+        "crust",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Even though its good seafood, the prices are too high.",
+    "aspects": [
+      [
+        "seafood",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "The food is okay and the prices here are mediocre.",
+    "aspects": [
+      [
+        "food",
+        "neutral"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "The food is excellent!",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Most of the servers are very attentive, friendly and quite attractive.",
+    "aspects": [
+      [
+        "servers",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "The food was good.",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Check out the secret back room.",
+    "aspects": [
+      [
+        "back room",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "The food is delicious - from the specials to the regular menu-fare, the dishes are never a disappointment.",
+    "aspects": [
+      [
+        "food",
+        "positive"
+      ],
+      [
+        "specials",
+        "positive"
+      ],
+      [
+        "regular menu-fare",
+        "positive"
+      ],
+      [
+        "dishes",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Make sure you try this place as often as you can.",
+    "aspects": [
+      [
+        "place",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "The hanger steak was like rubber and the tuna was flavorless not to mention it tasted like it had just been thawed.",
+    "aspects": [
+      [
+        "hanger steak",
+        "negative"
+      ],
+      [
+        "tuna",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "In summer-eat outside on a terrace (another great feature of Suan)!!!",
+    "aspects": [
+      [
+        "terrace",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "If you like your music blasted and the system isnt that great and if you want to pay at least 100 dollar bottle minimun then you'll love it here.",
+    "aspects": [
+      [
+        "music",
+        "negative"
+      ],
+      [
+        "bottle",
+        "negative"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Love Pizza 33..",
+    "aspects": [
+      [
+        "Pizza 33",
+        "positive"
+      ]
+    ]
+  },
+  {
+    "dataset": "res15",
+    "shot_size": 5,
+    "sentence": "Ingredients are organic which is a real plus for me.",
+    "aspects": [
+      [
+        "Ingredients",
+        "positive"
+      ]
+    ]
+  }
+]
