@@ -3,503 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABSA Annotation Tool - Enhanced</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <style>
-        :root {
-            --primary-color: #0d6efd;
-            --success-color: #198754;
-            --warning-color: #ffc107;
-            --danger-color: #dc3545;
-            --info-color: #0dcaf0;
-        }
-
-        body {
-            background-color: #f8f9fa;
-        }
-
-        .main-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header-section {
-            background: linear-gradient(135deg, var(--primary-color), #495057);
-            color: white;
-            padding: 2rem;
-            border-radius: 12px;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .upload-section {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-
-        .word-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin: 15px 0;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border: 1px solid #e9ecef;
-        }
-
-        .word {
-            padding: 8px 12px;
-            border: 2px solid #dee2e6;
-            border-radius: 6px;
-            cursor: pointer;
-            background: white;
-            transition: all 0.2s ease;
-            font-weight: 500;
-            user-select: none;
-            position: relative;
-        }
-
-        .word:hover {
-            border-color: var(--primary-color);
-            transform: translateY(-1px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .word.selected {
-            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-            border-color: var(--primary-color);
-            color: var(--primary-color);
-            font-weight: 600;
-        }
-
-        .word.aspect {
-            background: linear-gradient(135deg, #d4edda, #c3e6cb);
-            border-color: var(--success-color);
-            color: var(--success-color);
-        }
-
-        .word.aspect::after {
-            content: "A";
-            position: absolute;
-            top: -5px;
-            right: -5px;
-            background: var(--success-color);
-            color: white;
-            font-size: 10px;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        .word.sentiment-positive {
-            background: linear-gradient(135deg, #d1e7dd, #badbcc);
-            border-color: var(--success-color);
-        }
-
-        .word.sentiment-negative {
-            background: linear-gradient(135deg, #f8d7da, #f1aeb5);
-            border-color: var(--danger-color);
-        }
-
-        .word.sentiment-neutral {
-            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
-            border-color: var(--warning-color);
-        }
-
-        .row-container {
-            background: white;
-            border: 1px solid #e9ecef;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            transition: box-shadow 0.2s ease;
-        }
-
-        .row-container:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .row-header {
-            border-bottom: 1px solid #e9ecef;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-
-        .annotation-controls {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            border-left: 4px solid var(--primary-color);
-            position: sticky;
-            top: 20px;
-            z-index: 1000;
-        }
-
-        .control-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .control-group:last-child {
-            margin-bottom: 0;
-        }
-
-        .btn {
-            border-radius: 6px;
-            font-weight: 500;
-            transition: all 0.2s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-
-        .navigation-section {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-top: 20px;
-        }
-
-        .page-info {
-            font-weight: 500;
-            color: #495057;
-        }
-
-        .stats-container {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-
-        .stat-card {
-            text-align: center;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border: 1px solid #e9ecef;
-        }
-
-        .stat-card h6 {
-            margin-bottom: 10px;
-            color: #495057;
-            font-weight: 600;
-        }
-
-        .stat-card div {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 5px;
-        }
-
-        .sentiment-dist {
-            display: flex;
-            justify-content: center;
-            gap: 5px;
-            flex-wrap: wrap;
-        }
-
-        .progress {
-            height: 8px;
-            border-radius: 4px;
-        }
-
-        .loading-spinner {
-            display: none;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .selection-info {
-            background: #e3f2fd;
-            border: 1px solid #bbdefb;
-            border-radius: 8px;
-            padding: 10px;
-            margin: 10px 0;
-            font-weight: 500;
-            color: var(--primary-color);
-        }
-
-        .legend {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-
-        .legend-item {
-            display: inline-flex;
-            align-items: center;
-            margin-right: 20px;
-            margin-bottom: 5px;
-        }
-
-        .legend-color {
-            width: 20px;
-            height: 20px;
-            border-radius: 4px;
-            margin-right: 8px;
-            border: 2px solid #dee2e6;
-        }
-
-        .alert-container {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 9999;
-            max-width: 400px;
-        }
-
-        .keyboard-shortcuts {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 15px;
-            border: 1px solid #e9ecef;
-        }
-
-        .shortcut-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
-
-        .shortcut-key {
-            background: #495057;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-family: monospace;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .control-group {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .word-container {
-                gap: 5px;
-            }
-            
-            .word {
-                padding: 6px 10px;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+    <title>SRL Labeling Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="main-container">
-        <!-- Header -->
-        <div class="header-section">
-            <h1 class="mb-2">
-                <i class="bi bi-tags"></i>
-                ABSA Annotation Tool
-            </h1>
-            <p class="mb-0">Aspect-Based Sentiment Analysis Labeling Interface</p>
-        </div>
-
-        <!-- Alert Container -->
-        <div id="alertContainer" class="alert-container"></div>
-
-        <!-- Loading Spinner -->
-        <div id="loadingSpinner" class="loading-spinner">
-            <div class="spinner-border text-primary" role="status">
-                <span class="visually-hidden">Loading...</span>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Semantic Role Labeling Tool</h1>
+        
+        <!-- CSV Upload Section -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Upload CSV File</h5>
+                        <form id="upload-form" class="mb-3">
+                            <div class="mb-3">
+                                <input type="file" class="form-control" id="csv-file" accept=".csv">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Upload</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <p class="mt-2">Processing...</p>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Export Labels</h5>
+                        <button id="export-csv" class="btn btn-success">Export to CSV</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- File Upload Section -->
-        <div class="upload-section">
-            <h3><i class="bi bi-cloud-upload"></i> Upload Data</h3>
-            <form id="uploadForm" class="mt-3" enctype="multipart/form-data">
-                <div class="row">
-                    <div class="col-md-8">
-                        <label for="csvFile" class="form-label">Select CSV File</label>
-                        <input type="file" class="form-control" id="csvFile" name="file" accept=".csv" required>
-                        <div class="form-text">
-                            Upload a CSV file with a 'text' column. Maximum file size: 50MB
-                        </div>
-                        <div id="uploadStatus" class="mt-2" style="display: none;">
-                            <div class="alert alert-info">
-                                <div class="spinner-border spinner-border-sm" role="status">
-                                    <span class="visually-hidden">Loading...</span>
-                                </div>
-                                <span class="ms-2">Uploading file...</span>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Text to Label</h5>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button id="prev-text" class="btn btn-secondary">Previous</button>
+                                <span id="text-counter" class="text-muted">Text 0 of 0</span>
+                                <button id="next-text" class="btn btn-secondary">Next</button>
                             </div>
                         </div>
+                        <div id="text-container" class="mb-3">
+                            <p id="text-to-label" class="p-3 border rounded"></p>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="role-select" class="form-label">Select Role:</label>
+                            <select id="role-select" class="form-select">
+                                <option value="agent">Agent</option>
+                                <option value="patient">Patient</option>
+                                <option value="theme">Theme</option>
+                                <option value="goal">Goal</option>
+                                <option value="source">Source</option>
+                                <option value="location">Location</option>
+                                <option value="time">Time</option>
+                                <option value="manner">Manner</option>
+                            </select>
+                        </div>
+                        
+                        <button id="save-label" class="btn btn-primary">Save Label</button>
                     </div>
-                    <div class="col-md-4 d-flex align-items-end">
-                        <button type="submit" class="btn btn-primary me-2" id="uploadBtn">
-                            <i class="bi bi-upload"></i> Upload
-                        </button>
-                        <button type="button" id="loadAutoSaveBtn" class="btn btn-outline-secondary" title="Load previously saved progress">
-                            <i class="bi bi-clock-history"></i> Load Auto-save
-                        </button>
-                    </div>
-                </div>
-            </form>
-            
-            <!-- Keyboard Shortcuts -->
-            <div class="keyboard-shortcuts">
-                <h6><i class="bi bi-keyboard"></i> Keyboard Shortcuts</h6>
-                <div class="shortcut-item">
-                    <span>Save annotations</span>
-                    <span class="shortcut-key">Ctrl+S</span>
-                </div>
-                <div class="shortcut-item">
-                    <span>Mark as aspect</span>
-                    <span class="shortcut-key">Ctrl+A</span>
-                </div>
-                <div class="shortcut-item">
-                    <span>Previous page</span>
-                    <span class="shortcut-key">Ctrl+←</span>
-                </div>
-                <div class="shortcut-item">
-                    <span>Next page</span>
-                    <span class="shortcut-key">Ctrl+→</span>
-                </div>
-                <div class="shortcut-item">
-                    <span>Clear selection</span>
-                    <span class="shortcut-key">Esc</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Data Display Section -->
-        <div id="dataSection" style="display: none;">
-            <!-- Statistics -->
-            <div id="statsContainer" class="stats-container">
-                <!-- Stats will be populated by JavaScript -->
-            </div>
-
-            <!-- Legend -->
-            <div class="legend">
-                <h6><i class="bi bi-info-circle"></i> Legend</h6>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb);"></div>
-                    <span>Selected</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: linear-gradient(135deg, #d4edda, #c3e6cb);"></div>
-                    <span>Aspect</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: linear-gradient(135deg, #d1e7dd, #badbcc);"></div>
-                    <span>Positive Sentiment</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: linear-gradient(135deg, #f8d7da, #f1aeb5);"></div>
-                    <span>Negative Sentiment</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background: linear-gradient(135deg, #fff3cd, #ffeaa7);"></div>
-                    <span>Neutral Sentiment</span>
-                </div>
-            </div>
-
-            <!-- Annotation Controls -->
-            <div class="annotation-controls">
-                <h5><i class="bi bi-tools"></i> Annotation Tools</h5>
-                
-                <div class="control-group">
-                    <label class="form-label mb-0">Word Operations:</label>
-                    <button id="combineBtn" class="btn btn-success">
-                        <i class="bi bi-arrows-collapse"></i> Combine Selected
-                    </button>
-                    <button id="separateBtn" class="btn btn-warning">
-                        <i class="bi bi-arrows-expand"></i> Separate Selected
-                    </button>
-                </div>
-                
-                <div class="control-group">
-                    <label class="form-label mb-0">Annotation:</label>
-                    <button id="markAspectBtn" class="btn btn-info">
-                        <i class="bi bi-tag"></i> Mark as Aspect
-                    </button>
-                    <select id="sentimentSelect" class="form-select" style="width: auto;">
-                        <option value="">Select Sentiment</option>
-                        <option value="positive">😊 Positive</option>
-                        <option value="negative">😞 Negative</option>
-                        <option value="neutral">😐 Neutral</option>
-                    </select>
-                    <button id="applySentimentBtn" class="btn btn-secondary">
-                        <i class="bi bi-emoji-smile"></i> Apply Sentiment
-                    </button>
-                    <button id="clearAnnotationsBtn" class="btn btn-outline-danger">
-                        <i class="bi bi-eraser"></i> Clear Annotations
-                    </button>
-                </div>
-                
-                <div class="control-group">
-                    <button id="saveProgressBtn" class="btn btn-primary" data-bs-toggle="tooltip" title="Save Progress (Ctrl+S)">
-                        <i class="bi bi-save"></i> Save Progress
-                    </button>
-                    <button id="exportCsvBtn" class="btn btn-success" data-bs-toggle="tooltip" title="Export to CSV (Ctrl+E)">
-                        <i class="bi bi-file-earmark-spreadsheet"></i> Export CSV
-                    </button>
-                    <button id="loadAutoSaveBtn" class="btn btn-info" data-bs-toggle="tooltip" title="Load Auto-saved Progress">
-                        <i class="bi bi-arrow-clockwise"></i> Load Progress
-                    </button>
                 </div>
             </div>
             
-            <!-- Selection Info (will be added by JavaScript) -->
-            
-            <!-- Data Container -->
-            <div id="dataContainer">
-                <!-- Data rows will be populated by JavaScript -->
-            </div>
-            
-            <!-- Navigation -->
-            <div class="navigation-section">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="page-info">
-                        <i class="bi bi-file-text"></i>
-                        Page <span id="currentPage">1</span> of <span id="totalPages">1</span>
-                        (<span id="startIndex">1</span> - <span id="endIndex">10</span> of <span id="totalRows">0</span> items)
-                    </div>
-                    <div class="navigation-buttons">
-                        <button id="prevPage" class="btn btn-primary me-2" disabled>
-                            <i class="bi bi-chevron-left"></i> Previous
-                        </button>
-                        <button id="nextPage" class="btn btn-primary" disabled>
-                            Next <i class="bi bi-chevron-right"></i>
-                        </button>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Current Labels</h5>
+                        <div id="labels-list" class="list-group">
+                            <!-- Labels will be added here dynamically -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
-</html>
+</html> 
