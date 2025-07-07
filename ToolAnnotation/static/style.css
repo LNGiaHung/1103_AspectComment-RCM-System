@@ -23,6 +23,14 @@
 .word.selected.location { background-color: #b2dfdb; }
 .word.selected.time { background-color: #f8bbd0; }
 .word.selected.manner { background-color: #dcedc8; }
+.word.selected.ASPECT { background-color: #ffd966; }    /* Soft yellow */
+.word.selected.OPINION { background-color: #f4cccc; }   /* Soft red */
+.word.selected.HOLDER { background-color: #c9daf8; }    /* Soft blue */
+.word.selected.TARGET { background-color: #d9ead3; }    /* Soft green */
+.word.selected.NEGATION { background-color: #b4a7d6; }  /* Soft purple */
+.word.selected.TIME { background-color: #ffe599; }      /* Light gold */
+.word.selected.MODALITY { background-color: #b6d7a8; }  /* Light green */
+.word.selected.EMOTION { background-color: #f9cb9c; }   /* Soft orange */
 
 #text-to-label {
     min-height: 100px;

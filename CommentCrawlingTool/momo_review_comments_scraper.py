@@ -35,6 +35,36 @@ def save_comments_to_csv(comments, output_file):
         for row in comments:
             writer.writerow(row)
 
+def slow_scroll_to_element(driver, element, steps=10, delay=0.2):
+    """Scrolls slowly to the element in steps to ensure visibility."""
+    driver.execute_script("window.scrollTo(0, 0);")
+    location = driver.execute_script("return arguments[0].getBoundingClientRect().top + window.pageYOffset;", element)
+    current = 0
+    for i in range(steps):
+        current = int(location * (i + 1) / steps)
+        driver.execute_script(f"window.scrollTo(0, {current});")
+        time.sleep(delay)
+    driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element)
+    time.sleep(delay * 2)
+
+def expand_all_xem_them_spans(driver):
+    """Expand all 'Xem thêm' spans in currently loaded comments."""
+    while True:
+        expanded_any = False
+        # Find all spans that match the selector and have 'Xem thêm' text
+        spans = driver.find_elements(By.CSS_SELECTOR, "span.read-or-hide.cursor-pointer.pl-1.hover\:underline.text-blue-500")
+        for span in spans:
+            try:
+                if 'Xem thêm' in span.text:
+                    slow_scroll_to_element(driver, span, steps=10, delay=0.1)
+                    span.click()
+                    time.sleep(0.5)
+                    expanded_any = True
+            except Exception:
+                continue
+        if not expanded_any:
+            break
+
 def scrape_comments_for_movie(driver, url):
     driver.get(url)
     print("  Waiting 10s before crawling...")
@@ -71,7 +101,7 @@ def scrape_comments_for_movie(driver, url):
                 return null;
             ''')
             if btn:
-                driver.execute_script("arguments[0].scrollIntoView();", btn)
+                slow_scroll_to_element(driver, btn, steps=20, delay=0.15)
                 time.sleep(0.5)
                 btn.click()
                 delay = random.uniform(3, 6)
@@ -82,6 +112,9 @@ def scrape_comments_for_movie(driver, url):
         except Exception as e:
             print(f"No more 'Xem tiếp nhé!' button or error: {e}")
             break
+
+    # Expand all 'Xem thêm' spans before extracting comments
+    expand_all_xem_them_spans(driver)
 
     # After loading, extract all comments
     comment_divs = driver.find_elements(By.CSS_SELECTOR, "div.grid.grid-cols-1.divide-y.divide-gray-200 > div.relative.w-full.py-5")

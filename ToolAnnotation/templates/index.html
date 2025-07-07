@@ -55,15 +55,28 @@
                         <div class="mb-3">
                             <label for="role-select" class="form-label">Select Role:</label>
                             <select id="role-select" class="form-select">
-                                <option value="agent">Agent</option>
-                                <option value="patient">Patient</option>
-                                <option value="theme">Theme</option>
-                                <option value="goal">Goal</option>
-                                <option value="source">Source</option>
-                                <option value="location">Location</option>
-                                <option value="time">Time</option>
-                                <option value="manner">Manner</option>
+                                <option value="ASPECT">ASPECT</option>
+                                <option value="OPINION">OPINION</option>
+                                <option value="HOLDER">HOLDER</option>
+                                <option value="TARGET">TARGET</option>
+                                <option value="NEGATION">NEGATION</option>
+                                <option value="TIME">TIME</option>
+                                <option value="MODALITY">MODALITY</option>
+                                <option value="EMOTION">EMOTION</option>
                             </select>
+                            <div class="mt-2">
+                                <strong>Label Descriptions:</strong>
+                                <ul style="font-size: 0.95em;">
+                                    <li><b>ASPECT</b>: Phần của bộ phim được đề cập (ví dụ: diễn xuất, cốt truyện, nhạc phim)</li>
+                                    <li><b>OPINION</b>:  Ý kiến, cảm xúc (ví dụ: nhàm chán, hấp dẫn, tệ)</li>
+                                    <li><b>HOLDER</b>: Người đưa ra ý kiến (thường là người đánh giá, có thể ẩn)</li>
+                                    <li><b>TARGET</b>: Đối tượng được nói đến (thường là bộ phim hoặc một khía cạnh nào đó)</li>
+                                    <li><b>NEGATION</b>: Từ phủ định làm thay đổi ý nghĩa (ví dụ: không, chưa từng)</li>
+                                    <li><b>TIME</b>: Thông tin thời gian nếu có (ví dụ: "tối qua", "năm 2020")</li>
+                                    <li><b>MODALITY</b>: Mức độ, sắc thái (ví dụ: "có thể tốt hơn", "rất thích")</li>
+                                    <li><b>EMOTION</b>: (Tùy chọn) Từ chỉ cảm xúc rõ ràng (ví dụ: "yêu thích", "ghét")</li>
+                                </ul>
+                            </div>
                         </div>
                         
                         <button id="save-label" class="btn btn-primary">Save Label</button>

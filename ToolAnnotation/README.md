@@ -1,63 +1,82 @@
-# Semantic Role Labeling Tool
+# Công Cụ Gán Nhãn Vai Trò Ngữ Nghĩa (Semantic Role Labeling Tool)
 
-## Overview
+## Tổng Quan
 
-This tool is a web-based application for annotating text data with semantic roles (such as Agent, Patient, Theme, etc.). It is designed to help users label sentences or text snippets for tasks in Natural Language Processing (NLP), especially for Semantic Role Labeling (SRL) datasets.
+Công cụ này là một ứng dụng web giúp gán nhãn vai trò ngữ nghĩa cho dữ liệu văn bản (ví dụ: Chủ thể, Đối tượng, Chủ đề, v.v.). Công cụ hỗ trợ người dùng gán nhãn cho các câu hoặc đoạn văn bản, đặc biệt hữu ích cho các tác vụ Xử lý Ngôn ngữ Tự nhiên (NLP) như xây dựng bộ dữ liệu Semantic Role Labeling (SRL).
 
-## How the Tool Works
+## Hướng Dẫn Sử Dụng
 
-1. **Upload CSV File**:
-   - Click the **Upload** button and select a CSV file containing the texts you want to label. Each row should contain a text snippet in the first column.
-2. **Navigate Texts**:
-   - Use the **Previous** and **Next** buttons to move through the texts loaded from your CSV file. The current text is displayed in the center panel.
-3. **Labeling**:
-   - For each text, select a semantic role from the dropdown menu (e.g., Agent, Patient, Theme, etc.).
-   - Click **Save Label** to assign the selected role to the current text. The label will appear in the "Current Labels" panel on the right.
-4. **Export Labels**:
-   - Once you have finished labeling, click **Export to CSV** to download a CSV file containing the original texts and their assigned labels.
+1. **Tải lên tệp CSV**:
+   - Nhấn nút **Upload** và chọn tệp CSV chứa các văn bản cần gán nhãn. Mỗi dòng nên chứa một đoạn văn bản ở cột đầu tiên.
+2. **Duyệt văn bản**:
+   - Sử dụng các nút **Previous** và **Next** để chuyển qua lại giữa các văn bản đã tải lên. Văn bản hiện tại sẽ hiển thị ở trung tâm.
+3. **Gán nhãn**:
+   - Với mỗi văn bản, chọn vai trò ngữ nghĩa từ danh sách (ví dụ: ASPECT, OPINION, HOLDER, v.v.).
+   - Nhấn **Save Label** để lưu nhãn cho văn bản hiện tại. Nhãn sẽ xuất hiện ở bảng bên phải.
+4. **Xuất kết quả**:
+   - Sau khi hoàn thành, nhấn **Export to CSV** để tải về tệp CSV chứa các văn bản và nhãn đã gán.
 
-## Expected Output After Labeling
+## Kết Quả Xuất Ra
 
-The exported CSV contains detailed information for each labeled span in the sentence. The columns are as follows:
+Tệp CSV xuất ra sẽ chứa thông tin chi tiết cho từng đoạn văn bản và các nhãn đã gán. Các cột bao gồm:
 
-- `sentence`: The original sentence.
-- For each label (e.g., label_1, label_2, ...):
-  - `label_X_r`: The semantic role (e.g., agent, manner, time, source).
-  - `label_X_te`: The text span in the sentence corresponding to the label.
-  - `label_X_ir`: The index or range (e.g., token indices) of the labeled span in the sentence.
+- `sentence`: Câu/văn bản gốc.
+- Với mỗi nhãn (ví dụ: label_1, label_2, ...):
+  - `label_X_r`: Vai trò ngữ nghĩa (ví dụ: ASPECT, OPINION, ...).
+  - `label_X_te`: Đoạn văn bản được gán nhãn.
+  - `label_X_ir`: Vị trí hoặc chỉ số từ trong câu được gán nhãn.
 
-### Example Output
+### Ví dụ Kết Quả
 
 | sentence                                | label_1_r   | label_1_te     | label_1_ir | label_2_r   | label_2_te | label_2_ir | label_3_r | label_3_te    | label_3_ir |
 | --------------------------------------- | ----------- | -------------- | ---------- | ----------- | ---------- | ---------- | --------- | ------------- | ---------- |
-| I loved the acting in this movie.       | experiencer | I              | 0          | theme       | the acting | 2,3        | location  | in this movie | 4,5,6      |
-| The plot was confusing but interesting. | theme       | The plot       | 0,1        | manner      | confusing  | 3          | manner    | interesting   | 5          |
-| The movie made me cry.                  | theme       | The movie      | 0,1        | experiencer | me         | 3          | result    | cry           | 4          |
-| The soundtrack was amazing.             | theme       | The soundtrack | 0,1,2      | manner      | amazing    | 4          |           |               |            |
+| Tôi rất thích diễn xuất trong bộ phim này. | ASPECT      | diễn xuất      | 2,3        | OPINION     | thích      | 1          | TARGET    | bộ phim này   | 5,6,7      |
+| Nội dung phim khá hấp dẫn.                | ASPECT      | Nội dung phim  | 0,1,2      | OPINION     | hấp dẫn    | 4          |           |               |            |
 
-- Each `label_X_r`/`label_X_te`/`label_X_ir` group corresponds to a labeled span in the sentence.
-- The number of label columns depends on how many spans were labeled in each sentence.
+- Mỗi nhóm `label_X_r`/`label_X_te`/`label_X_ir` tương ứng với một nhãn được gán cho câu.
+- Số lượng cột nhãn phụ thuộc vào số nhãn được gán cho mỗi câu.
 
-This output can be used for training or evaluating NLP models for semantic role labeling tasks, supporting multiple roles and spans per sentence.
+Kết quả này có thể dùng để huấn luyện hoặc đánh giá các mô hình NLP cho bài toán gán nhãn vai trò ngữ nghĩa.
 
-## Requirements
+## Yêu Cầu
 
 - Python 3.x
-- Flask
-- (See `requirements.txt` for full dependencies)
+- Flask (`flask==2.0.1`)
+- Flask-CORS (`flask-cors==3.0.10`)
+- Werkzeug (`werkzeug==2.0.3`)
+- Pandas (`pandas==1.3.5`)
 
-## Running the Tool
+Tất cả các thư viện Python cần thiết đã được liệt kê trong `requirements.txt`.
 
-1. Install dependencies:
+Không cần cài đặt thêm thư viện JavaScript; các thư viện giao diện (ví dụ: Bootstrap) được tải qua CDN.
+
+## Chạy Ứng Dụng
+
+1. Cài đặt các thư viện:
    ```bash
    pip install -r requirements.txt
    ```
-2. Start the application:
+2. Khởi động ứng dụng:
    ```bash
    python app.py
    ```
-3. Open your browser and go to `http://localhost:5000` to use the tool.
+3. Mở trình duyệt và truy cập `http://localhost:5000` để sử dụng công cụ.
 
 ---
 
-For any issues or questions, please contact the maintainer.
+## Mô tả Nhãn (Label Descriptions)
+
+| Nhãn         | Mô tả                                                                 |
+| ------------ | ---------------------------------------------------------------------- |
+| **ASPECT**   | Phần của bộ phim được đề cập (ví dụ: diễn xuất, cốt truyện, nhạc phim) |
+| **OPINION**  | Ý kiến, cảm xúc (ví dụ: nhàm chán, hấp dẫn, tệ)                        |
+| **HOLDER**   | Người đưa ra ý kiến (thường là người đánh giá, có thể ẩn)              |
+| **TARGET**   | Đối tượng được nói đến (thường là bộ phim hoặc một khía cạnh nào đó)   |
+| **NEGATION** | Từ phủ định làm thay đổi ý nghĩa (ví dụ: không, chưa từng)             |
+| **TIME**     | Thông tin thời gian nếu có (ví dụ: "tối qua", "năm 2020")            |
+| **MODALITY** | Mức độ, sắc thái (ví dụ: "có thể tốt hơn", "rất thích")              |
+| **EMOTION**  | (Tùy chọn) Từ chỉ cảm xúc rõ ràng (ví dụ: "yêu thích", "ghét")        |
+
+---
+
+Nếu có thắc mắc hoặc cần hỗ trợ, vui lòng liên hệ người phát triển.

@@ -74,6 +74,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.word').forEach(word => {
             word.addEventListener('click', handleWordClick);
         });
+
+        // Overlay: highlight labeled words for this sentence
+        applyLabelOverlays();
     }
 
     function handleWordClick(event) {
@@ -95,6 +98,24 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Sort selected words by index
         selectedWords.sort((a, b) => a.index - b.index);
+    }
+
+    function applyLabelOverlays() {
+        // Remove all label overlays first
+        document.querySelectorAll('.word').forEach(word => {
+            word.className = 'word';
+        });
+        // Get labels for current sentence
+        const currentLabels = labels.filter(label => label.sentence_index === currentTextIndex);
+        currentLabels.forEach(label => {
+            label.word_indices.forEach(idx => {
+                const wordSpan = document.querySelector(`.word[data-word-index='${idx}']`);
+                if (wordSpan) {
+                    wordSpan.classList.add('selected');
+                    wordSpan.classList.add(label.role);
+                }
+            });
+        });
     }
 
     function updateTextCounter() {
@@ -139,6 +160,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.word.selected').forEach(word => {
                 word.classList.remove('selected');
             });
+            // Re-apply overlays
+            applyLabelOverlays();
         })
         .catch(error => console.error('Error:', error));
     });
