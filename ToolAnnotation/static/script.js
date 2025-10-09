@@ -45,168 +45,195 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error:', error));
     });
 
-    // Handle text navigation
-    prevTextButton.addEventListener('click', function() {
+    // --- BEGIN NEW STATE AND UTILS ---
+    const wordsContainer = document.getElementById('words-container');
+    const combineBtn = document.getElementById('combine-words');
+    const separateBtn = document.getElementById('separate-word');
+    const resetBtn = document.getElementById('reset-labels');
+
+    let wordGroups = []; // [{text: '...', indices: [0,1], label: null}]
+    let selectedGroupIndices = []; // indices in wordGroups
+    let allLabels = []; // [{sentence_index, groups: [{text, indices, label}]}]
+
+    function splitTextToGroups(text) {
+        const words = text.split(/\s+/);
+        return words.map((w, i) => ({ text: w, indices: [i], label: null }));
+    }
+
+    function renderWordGroups() {
+        wordsContainer.innerHTML = '';
+        wordGroups.forEach((group, idx) => {
+            const span = document.createElement('span');
+            span.className = 'word-group btn btn-light btn-sm m-1';
+            span.textContent = group.text;
+            span.dataset.groupIndex = idx;
+            if (selectedGroupIndices.includes(idx)) span.classList.add('selected');
+            if (group.label) span.classList.add('labeled');
+            span.onclick = () => toggleGroupSelect(idx);
+            wordsContainer.appendChild(span);
+        });
+        updateNextButtonState();
+    }
+
+    function toggleGroupSelect(idx) {
+        if (selectedGroupIndices.includes(idx)) {
+            selectedGroupIndices = selectedGroupIndices.filter(i => i !== idx);
+        } else {
+            selectedGroupIndices.push(idx);
+        }
+        renderWordGroups();
+    }
+
+    function combineSelectedGroups() {
+        if (selectedGroupIndices.length < 2) return;
+        selectedGroupIndices.sort((a, b) => a - b);
+        const combined = {
+            text: selectedGroupIndices.map(i => wordGroups[i].text).join(' '),
+            indices: selectedGroupIndices.flatMap(i => wordGroups[i].indices),
+            label: null
+        };
+        wordGroups = wordGroups.filter((_, i) => !selectedGroupIndices.includes(i));
+        wordGroups.splice(selectedGroupIndices[0], 0, combined);
+        selectedGroupIndices = [selectedGroupIndices[0]];
+        renderWordGroups();
+    }
+
+    function separateSelectedGroup() {
+        if (selectedGroupIndices.length !== 1) return;
+        const idx = selectedGroupIndices[0];
+        const group = wordGroups[idx];
+        if (group.indices.length === 1) return;
+        const newGroups = group.indices.map((i, j) => ({
+            text: group.text.split(' ')[j],
+            indices: [i],
+            label: null
+        }));
+        wordGroups.splice(idx, 1, ...newGroups);
+        selectedGroupIndices = newGroups.map((_, j) => idx + j);
+        renderWordGroups();
+    }
+
+    function resetLabels() {
+        wordGroups.forEach(g => g.label = null);
+        selectedGroupIndices = [];
+        renderWordGroups();
+        updateLabelsList();
+    }
+
+    function labelSelectedGroup() {
+        if (selectedGroupIndices.length !== 1) {
+            alert('Select one word/group to label.');
+            return;
+        }
+        const idx = selectedGroupIndices[0];
+        const role = roleSelect.value;
+        wordGroups[idx].label = role;
+        selectedGroupIndices = [];
+        renderWordGroups();
+        updateLabelsList();
+    }
+
+    function updateLabelsList() {
+        labelsList.innerHTML = '';
+        wordGroups.forEach((g, idx) => {
+            const div = document.createElement('div');
+            div.className = 'label-item';
+            div.innerHTML = `<strong>${g.label || '-'}:</strong> ${g.text}`;
+            if (g.label) {
+                const removeBtn = document.createElement('span');
+                removeBtn.textContent = '\u00d7';
+                removeBtn.className = 'remove-label';
+                removeBtn.onclick = () => { g.label = null; renderWordGroups(); updateLabelsList(); };
+                div.prepend(removeBtn);
+            }
+            labelsList.appendChild(div);
+        });
+    }
+
+    function updateNextButtonState() {
+        const allLabeled = wordGroups.every(g => g.label);
+        nextTextButton.disabled = !allLabeled;
+    }
+
+    function saveCurrentLabelsToAllLabels() {
+        allLabels = allLabels.filter(l => l.sentence_index !== currentTextIndex);
+        allLabels.push({
+            sentence_index: currentTextIndex,
+            groups: wordGroups.map(g => ({ text: g.text, indices: g.indices, label: g.label }))
+        });
+    }
+
+    function exportLabelsToCSV() {
+        // Prepare CSV content
+        let csv = 'sentence_index,group_text,indices,label\n';
+        allLabels.forEach(l => {
+            l.groups.forEach(g => {
+                csv += `${l.sentence_index},"${g.text}","${g.indices.join(' ')}",${g.label}\n`;
+            });
+        });
+        const blob = new Blob([csv], { type: 'text/csv' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'labels.csv';
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+    // --- END NEW STATE AND UTILS ---
+
+    // --- OVERRIDE NAVIGATION AND LABELING LOGIC ---
+    function updateTextDisplay() {
+        const text = texts[currentTextIndex] || '';
+        wordGroups = splitTextToGroups(text);
+        selectedGroupIndices = [];
+        // Restore previous labels if any
+        const prev = allLabels.find(l => l.sentence_index === currentTextIndex);
+        if (prev) {
+            wordGroups.forEach((g, i) => {
+                const found = prev.groups.find(pg => pg.indices.join(',') === g.indices.join(','));
+                if (found) g.label = found.label;
+            });
+        }
+        renderWordGroups();
+        updateLabelsList();
+    }
+
+    prevTextButton.onclick = function() {
         if (currentTextIndex > 0) {
+            saveCurrentLabelsToAllLabels();
             currentTextIndex--;
             updateTextDisplay();
             updateTextCounter();
         }
-    });
+    };
 
-    nextTextButton.addEventListener('click', function() {
-        if (currentTextIndex < texts.length - 1) {
+    nextTextButton.onclick = function() {
+        if (currentTextIndex < texts.length - 1 && wordGroups.every(g => g.label)) {
+            saveCurrentLabelsToAllLabels();
             currentTextIndex++;
             updateTextDisplay();
             updateTextCounter();
         }
-    });
+    };
 
-    function updateTextDisplay() {
-        const text = texts[currentTextIndex] || '';
-        // Split text into words and create spans for each word
-        const words = text.split(/\s+/);
-        textContainer.innerHTML = words.map((word, index) => 
-            `<span class="word" data-word-index="${index}">${word}</span>`
-        ).join(' ');
-        
-        // Add click event listeners to words
-        document.querySelectorAll('.word').forEach(word => {
-            word.addEventListener('click', handleWordClick);
-        });
-
-        // Overlay: highlight labeled words for this sentence
-        applyLabelOverlays();
-    }
-
-    function handleWordClick(event) {
-        const word = event.target;
-        const wordIndex = parseInt(word.dataset.wordIndex);
-        
-        if (word.classList.contains('selected')) {
-            // Deselect the word
-            word.classList.remove('selected');
-            selectedWords = selectedWords.filter(w => w.index !== wordIndex);
-        } else {
-            // Select the word
-            word.classList.add('selected');
-            selectedWords.push({
-                index: wordIndex,
-                text: word.textContent
-            });
-        }
-        
-        // Sort selected words by index
-        selectedWords.sort((a, b) => a.index - b.index);
-    }
-
-    function applyLabelOverlays() {
-        // Remove all label overlays first
-        document.querySelectorAll('.word').forEach(word => {
-            word.className = 'word';
-        });
-        // Get labels for current sentence
-        const currentLabels = labels.filter(label => label.sentence_index === currentTextIndex);
-        currentLabels.forEach(label => {
-            label.word_indices.forEach(idx => {
-                const wordSpan = document.querySelector(`.word[data-word-index='${idx}']`);
-                if (wordSpan) {
-                    wordSpan.classList.add('selected');
-                    wordSpan.classList.add(label.role);
-                }
-            });
-        });
-    }
-
-    function updateTextCounter() {
-        textCounter.textContent = `Text ${currentTextIndex + 1} of ${texts.length}`;
-    }
-
-    // Save label
-    saveButton.addEventListener('click', function() {
-        if (selectedWords.length === 0) {
-            alert('Please select some words first!');
-            return;
-        }
-
-        const role = roleSelect.value;
-        const selectedText = selectedWords.map(w => w.text).join(' ');
-        
-        const label = {
-            text: selectedText,
-            role: role,
-            id: Date.now(),
-            sentence: texts[currentTextIndex],
-            sentence_index: currentTextIndex,
-            word_indices: selectedWords.map(w => w.index)
-        };
-
-        // Add to local array
-        labels.push(label);
-
-        // Save to server
-        fetch('/api/save_label', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(label)
-        })
-        .then(response => response.json())
-        .then(data => {
-            updateLabelsList();
-            // Clear selection
-            selectedWords = [];
-            document.querySelectorAll('.word.selected').forEach(word => {
-                word.classList.remove('selected');
-            });
-            // Re-apply overlays
-            applyLabelOverlays();
-        })
-        .catch(error => console.error('Error:', error));
-    });
-
-    // Export labels
-    exportButton.addEventListener('click', function() {
-        if (labels.length === 0) {
-            alert('No labels to export!');
-            return;
-        }
-
-        window.location.href = '/api/export_csv';
-    });
-
-    // Update labels list
-    function updateLabelsList() {
-        labelsList.innerHTML = '';
-        // Filter labels for current text
-        const currentLabels = labels.filter(label => label.sentence_index === currentTextIndex);
-        
-        currentLabels.forEach(label => {
-            const labelItem = document.createElement('div');
-            labelItem.className = 'label-item';
-            labelItem.innerHTML = `
-                <span class="remove-label" data-id="${label.id}">×</span>
-                <strong>${label.role}:</strong> ${label.text}
-            `;
-            labelsList.appendChild(labelItem);
-        });
-
-        // Add remove functionality
-        document.querySelectorAll('.remove-label').forEach(button => {
-            button.addEventListener('click', function() {
-                const id = parseInt(this.dataset.id);
-                labels = labels.filter(label => label.id !== id);
-                updateLabelsList();
-            });
-        });
-    }
+    combineBtn.onclick = combineSelectedGroups;
+    separateBtn.onclick = separateSelectedGroup;
+    resetBtn.onclick = resetLabels;
+    saveButton.onclick = labelSelectedGroup;
+    exportButton.onclick = exportLabelsToCSV;
 
     // Load existing labels
     fetch('/api/get_labels')
         .then(response => response.json())
         .then(data => {
-            labels = data;
+            allLabels = data;
+            // Update wordGroups and render based on existing labels
+            allLabels.forEach(l => {
+                l.groups.forEach(g => {
+                    wordGroups.push({ text: g.text, indices: g.indices, label: g.label });
+                });
+            });
+            renderWordGroups();
             updateLabelsList();
         })
         .catch(error => console.error('Error:', error));

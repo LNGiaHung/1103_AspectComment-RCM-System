@@ -45,11 +45,16 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <button id="prev-text" class="btn btn-secondary">Previous</button>
                                 <span id="text-counter" class="text-muted">Text 0 of 0</span>
-                                <button id="next-text" class="btn btn-secondary">Next</button>
+                                <button id="next-text" class="btn btn-secondary" disabled>Next</button>
                             </div>
                         </div>
                         <div id="text-container" class="mb-3">
-                            <p id="text-to-label" class="p-3 border rounded"></p>
+                            <div id="words-container" class="p-3 border rounded d-flex flex-wrap"></div>
+                        </div>
+                        <div class="mb-3 d-flex gap-2">
+                            <button id="combine-words" class="btn btn-outline-secondary btn-sm">Combine</button>
+                            <button id="separate-word" class="btn btn-outline-secondary btn-sm">Separate</button>
+                            <button id="reset-labels" class="btn btn-outline-danger btn-sm">Reset</button>
                         </div>
                         
                         <div class="mb-3">
@@ -79,7 +84,7 @@
                             </div>
                         </div>
                         
-                        <button id="save-label" class="btn btn-primary">Save Label</button>
+                        <button id="save-label" class="btn btn-primary d-none">Save Label</button>
                     </div>
                 </div>
             </div>
